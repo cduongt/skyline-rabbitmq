@@ -14,7 +14,7 @@ LOG_FILENAME = DIR_SAMBA + 'worker.' + IP_SLAVE + '.log'
 logging.basicConfig(filename=LOG_FILENAME,level=logging.DEBUG)
 
 credentials = pika.PlainCredentials('xxx', 'xxx')
-connection = pika.BlockingConnection(pika.ConnectionParameters(IP_MASTER,5672,'/',credentials,socket_timeout=20))
+connection = pika.BlockingConnection(pika.ConnectionParameters(IP_MASTER,5672,'/',credentials,socket_timeout=20,heartbeat_interval=0))
 channel = connection.channel()
 
 channel.queue_declare(queue='work')
@@ -32,4 +32,5 @@ channel.basic_consume(callback,
                       no_ack=True)
 
 logging.debug(time.strftime('%H:%M:%S')+ ' [*] Waiting for messages. To exit press CTRL+C')
+channel.basic_qos(prefetch_count=1)
 channel.start_consuming()
