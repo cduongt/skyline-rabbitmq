@@ -96,5 +96,6 @@ Windows server 2012 R2
 1) Install Python 2.7
 2) Install Pika client
 3) Install Skyline
+- Download from: https://skyline.ms/project/home/software/Skyline/begin.view and install
 4) Mount shared folder (located on samba server)
 5) Run slave.py
