@@ -47,7 +47,6 @@ browsable = yes<br/>
 writable = yes<br/>
 guest ok = yes<br/>
 read only = no<br/>
-
 [secured]<br/>
 path = /samba/secured<br/>
 valid users = @smbgrp<br/>
