@@ -93,4 +93,11 @@ Windows server 2012 R2
 3) Install Skyline
 - Download from: https://skyline.ms/project/home/software/Skyline/begin.view and install
 4) Mount shared folder (located on samba server)
-5) Run slave.py
+5) Slave.py
+- Download slave.py from github
+- EDIT slave.py so it matches configuration <br/>
+DIR_SAMBA         - variable must match samba configuration <br/>
+IP_MASTER         - must match IP address of master node<br/>
+SKYLINE_EXE       - must match the path to SkylineRunner.exe<br/>
+Pika credentials  - must match configuration of pika on master node<br/>
+
