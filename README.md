@@ -6,8 +6,11 @@ This is proof-of-concept server-client application written for Skyline software 
 
 ### Master
 Centos 7
-1) Install RabitMQ - https://www.rabbitmq.com/
-- TODO - Davide - muzes prosim dodelat? Ja to sice dovedu nainstalovat, ale myslim ze ne zcela optimalnim zpusobem
+1) Install RabbitMQ - https://www.rabbitmq.com/
+- Install EPEL repo if not present: yum install epel-release
+- Update repo cache: yum update
+- Install rabbitmq-server: yum install rabbitmq-server
+- Enable rabbitmq on startup: chkconfig rabbitmq-server on
 - systemctl enable rabbitmq-server
 - systemctl start rabbitmq-server
 - rabbitmqctl add_user test test
