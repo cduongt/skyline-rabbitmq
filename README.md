@@ -86,7 +86,10 @@ pika.PlainCredentials - must match rabbitMQ credentials
 ### Slave
 Windows server 2012 R2
 1) Install Python 2.7
+- Download and install latest version of Python 2.7.x from https://www.python.org/downloads/
 2) Install Pika client
+- Install pip first - CMD, python get-pip.py
+- pip install pika
 3) Install Skyline
 - Download from: https://skyline.ms/project/home/software/Skyline/begin.view and install
 4) Mount shared folder (located on samba server)
