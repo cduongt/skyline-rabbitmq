@@ -8,7 +8,6 @@ This is proof-of-concept server-client application written for Skyline software 
 Centos 7
 1) Install RabitMQ - https://www.rabbitmq.com/
 - TODO - Davide - muzes prosim dodelat? Ja to sice dovedu nainstalovat, ale myslim ze ne zcela optimalnim zpusobem
-
 - systemctl enable rabbitmq-server
 - systemctl start rabbitmq-server
 - rabbitmqctl add_user test test
