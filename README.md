@@ -67,27 +67,21 @@ browsable = yes<br/>
 - smbpasswd -a samba
 - mkdir -p /samba/secured
 - chmod -R 0777 secured/
-- chown -R samba:smbgrp share/
+- chown -R samba:smbgrp secured/
 - chcon -t samba_share_t secured/
 - systemctl restart nmb.service
 - systemctl restart smb.service
 
-5) Download and run master.py
+5) Python master script
 - mkdir /home/skyline
 - cd /home/skyline
-- wget master.py ... source github
+- wget master.py ... source github ...
 - nano master.py <br/>EDIT:<br/>
 DIR_SAMBA - e.g. /samba/secured<br/>
 pika.PlainCredentials - must match rabbitMQ credentials
-- nohup python -u /home/skyline/master.py > master.log &
-- crontab -e<br/>
+- FOR TESTING: nohup python -u /home/skyline/master.py > master.log &
+- AUTO START: crontab -e<br/>
 @reboot /home/skyline/master.py
-
-
-
-
-
-
 
 ### Slave
 Windows server 2012 R2
