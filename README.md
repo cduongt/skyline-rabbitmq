@@ -111,9 +111,10 @@ INSERT python <path_to_python.py><br/>
 2) Mount shared folder (located on master node)
 3) Prepare your own analysis in skyline or download testing data from the repository
 4) Copy .sky file and folder with data (named /data) into shared folder.
-5) See the results in log. 
+5) Process
 - Task has been noticed by master node when the .progress file is created
 - Temporary files are created when the task is started on the worker node
 - .skyd file is created when the task is finished
 - Info/debug or error messages are stored in master.log or worker.IP.log files
+6) Now you can open .sky file with the results (chromatographs)
 
