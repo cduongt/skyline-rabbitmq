@@ -100,4 +100,9 @@ DIR_SAMBA         - variable must match samba configuration <br/>
 IP_MASTER         - must match IP address of master node<br/>
 SKYLINE_EXE       - must match the path to SkylineRunner.exe<br/>
 Pika credentials  - must match configuration of pika on master node<br/>
+- start slave.py automatically <br/>
+RUN shell:startup<br/>
+CREATE FILE python_startup.bat<br/>
+INSERT python <path_to_python.py><br/>
+
 
