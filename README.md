@@ -2,6 +2,13 @@
 
 This is proof-of-concept server-client application written for Skyline software controlled by RabbitMQ. The prototype was tested in MetaCloud and it was written for [MMCI](https://www.mou.cz/en/) - Masaryk Memorial Cancer Institute.
 
+## License
+- code of maste.py and slave.py - MIT license
+- Python 2.7                    - GPL-compatible
+- RabbitMQ                      - Mozilla public license
+- Pika                          - BSD 3-clause
+- Skyline                       - Apache 2.0
+
 ## Installation
 
 ### Master
